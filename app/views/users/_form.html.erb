@@ -1,0 +1,229 @@
+<%= form_for(@user) do |f| %>
+  <% if @user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+      <% @user.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :id %><br />
+    <%= f.number_field :id %>
+  </div>
+  <div class="field">
+    <%= f.label :login %><br />
+    <%= f.text_field :login %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :crypted_password %><br />
+    <%= f.text_field :crypted_password %>
+  </div>
+  <div class="field">
+    <%= f.label :salt %><br />
+    <%= f.text_field :salt %>
+  </div>
+  <div class="field">
+    <%= f.label :created_at %><br />
+    <%= f.time_select :created_at %>
+  </div>
+  <div class="field">
+    <%= f.label :updated_at %><br />
+    <%= f.time_select :updated_at %>
+  </div>
+  <div class="field">
+    <%= f.label :remember_token %><br />
+    <%= f.text_field :remember_token %>
+  </div>
+  <div class="field">
+    <%= f.label :remember_token_expires_at %><br />
+    <%= f.time_select :remember_token_expires_at %>
+  </div>
+  <div class="field">
+    <%= f.label :admin %><br />
+    <%= f.check_box :admin %>
+  </div>
+  <div class="field">
+    <%= f.label :postal_code %><br />
+    <%= f.text_field :postal_code %>
+  </div>
+  <div class="field">
+    <%= f.label :state %><br />
+    <%= f.text_field :state %>
+  </div>
+  <div class="field">
+    <%= f.label :deleted_at %><br />
+    <%= f.time_select :deleted_at %>
+  </div>
+  <div class="field">
+    <%= f.label :activation_code %><br />
+    <%= f.text_field :activation_code %>
+  </div>
+  <div class="field">
+    <%= f.label :activated_at %><br />
+    <%= f.time_select :activated_at %>
+  </div>
+  <div class="field">
+    <%= f.label :node_id %><br />
+    <%= f.text_field :node_id %>
+  </div>
+  <div class="field">
+    <%= f.label :parental_password %><br />
+    <%= f.text_field :parental_password %>
+  </div>
+  <div class="field">
+    <%= f.label :rewinds_updated_at %><br />
+    <%= f.time_select :rewinds_updated_at %>
+  </div>
+  <div class="field">
+    <%= f.label :publisher_id %><br />
+    <%= f.number_field :publisher_id %>
+  </div>
+  <div class="field">
+    <%= f.label :domain_id %><br />
+    <%= f.text_field :domain_id %>
+  </div>
+  <div class="field">
+    <%= f.label :recording_updated_at %><br />
+    <%= f.time_select :recording_updated_at %>
+  </div>
+  <div class="field">
+    <%= f.label :recording_rule_updated_at %><br />
+    <%= f.time_select :recording_rule_updated_at %>
+  </div>
+  <div class="field">
+    <%= f.label :locale %><br />
+    <%= f.text_field :locale %>
+  </div>
+  <div class="field">
+    <%= f.label :eula_accepted_at %><br />
+    <%= f.time_select :eula_accepted_at %>
+  </div>
+  <div class="field">
+    <%= f.label :parental_control_pin %><br />
+    <%= f.text_field :parental_control_pin %>
+  </div>
+  <div class="field">
+    <%= f.label :favorite_vod_updated_at %><br />
+    <%= f.time_select :favorite_vod_updated_at %>
+  </div>
+  <div class="field">
+    <%= f.label :resume_updated_at %><br />
+    <%= f.time_select :resume_updated_at %>
+  </div>
+  <div class="field">
+    <%= f.label :guid %><br />
+    <%= f.text_field :guid %>
+  </div>
+  <div class="field">
+    <%= f.label :csg_subscriber_id %><br />
+    <%= f.text_field :csg_subscriber_id %>
+  </div>
+  <div class="field">
+    <%= f.label :suspended_at %><br />
+    <%= f.time_select :suspended_at %>
+  </div>
+  <div class="field">
+    <%= f.label :parental_configuration_updated_at %><br />
+    <%= f.time_select :parental_configuration_updated_at %>
+  </div>
+  <div class="field">
+    <%= f.label :tvod_entitlements_updated_at %><br />
+    <%= f.time_select :tvod_entitlements_updated_at %>
+  </div>
+  <div class="field">
+    <%= f.label :samsung_account_id %><br />
+    <%= f.text_field :samsung_account_id %>
+  </div>
+  <div class="field">
+    <%= f.label :watchlist_updated_at %><br />
+    <%= f.time_select :watchlist_updated_at %>
+  </div>
+  <div class="field">
+    <%= f.label :est_resumes_updated_at %><br />
+    <%= f.time_select :est_resumes_updated_at %>
+  </div>
+  <div class="field">
+    <%= f.label :rental_resumes_updated_at %><br />
+    <%= f.time_select :rental_resumes_updated_at %>
+  </div>
+  <div class="field">
+    <%= f.label :linear_resumes_updated_at %><br />
+    <%= f.time_select :linear_resumes_updated_at %>
+  </div>
+  <div class="field">
+    <%= f.label :recording_resumes_updated_at %><br />
+    <%= f.time_select :recording_resumes_updated_at %>
+  </div>
+  <div class="field">
+    <%= f.label :fod_resumes_updated_at %><br />
+    <%= f.time_select :fod_resumes_updated_at %>
+  </div>
+  <div class="field">
+    <%= f.label :linear_entitlements_updated_at %><br />
+    <%= f.time_select :linear_entitlements_updated_at %>
+  </div>
+  <div class="field">
+    <%= f.label :methods_of_payment_updated_at %><br />
+    <%= f.time_select :methods_of_payment_updated_at %>
+  </div>
+  <div class="field">
+    <%= f.label :migrated_at %><br />
+    <%= f.time_select :migrated_at %>
+  </div>
+  <div class="field">
+    <%= f.label :devices_updated_at %><br />
+    <%= f.time_select :devices_updated_at %>
+  </div>
+  <div class="field">
+    <%= f.label :preview_started_at %><br />
+    <%= f.time_select :preview_started_at %>
+  </div>
+  <div class="field">
+    <%= f.label :brand_id %><br />
+    <%= f.text_field :brand_id %>
+  </div>
+  <div class="field">
+    <%= f.label :phone_number %><br />
+    <%= f.number_field :phone_number %>
+  </div>
+  <div class="field">
+    <%= f.label :lsdvrs_updated_at %><br />
+    <%= f.time_select :lsdvrs_updated_at %>
+  </div>
+  <div class="field">
+    <%= f.label :allow_cancel %><br />
+    <%= f.check_box :allow_cancel %>
+  </div>
+  <div class="field">
+    <%= f.label :beta_status %><br />
+    <%= f.text_field :beta_status %>
+  </div>
+  <div class="field">
+    <%= f.label :sku %><br />
+    <%= f.text_field :sku %>
+  </div>
+  <div class="field">
+    <%= f.label :amazon_user_id %><br />
+    <%= f.text_field :amazon_user_id %>
+  </div>
+  <div class="field">
+    <%= f.label :account_status %><br />
+    <%= f.text_field :account_status %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

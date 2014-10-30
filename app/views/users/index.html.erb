@@ -1,0 +1,127 @@
+<h1>Listing users</h1>
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Login</th>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Crypted password</th>
+    <th>Salt</th>
+    <th>Created at</th>
+    <th>Updated at</th>
+    <th>Remember token</th>
+    <th>Remember token expires at</th>
+    <th>Admin</th>
+    <th>Postal code</th>
+    <th>State</th>
+    <th>Deleted at</th>
+    <th>Activation code</th>
+    <th>Activated at</th>
+    <th>Node</th>
+    <th>Parental password</th>
+    <th>Rewinds updated at</th>
+    <th>Publisher</th>
+    <th>Domain</th>
+    <th>Recording updated at</th>
+    <th>Recording rule updated at</th>
+    <th>Locale</th>
+    <th>Eula accepted at</th>
+    <th>Parental control pin</th>
+    <th>Favorite vod updated at</th>
+    <th>Resume updated at</th>
+    <th>Guid</th>
+    <th>Csg subscriber</th>
+    <th>Suspended at</th>
+    <th>Parental configuration updated at</th>
+    <th>Tvod entitlements updated at</th>
+    <th>Samsung account</th>
+    <th>Watchlist updated at</th>
+    <th>Est resumes updated at</th>
+    <th>Rental resumes updated at</th>
+    <th>Linear resumes updated at</th>
+    <th>Recording resumes updated at</th>
+    <th>Fod resumes updated at</th>
+    <th>Linear entitlements updated at</th>
+    <th>Methods of payment updated at</th>
+    <th>Migrated at</th>
+    <th>Devices updated at</th>
+    <th>Preview started at</th>
+    <th>Brand</th>
+    <th>Phone number</th>
+    <th>Lsdvrs updated at</th>
+    <th>Allow cancel</th>
+    <th>Beta status</th>
+    <th>Sku</th>
+    <th>Amazon user</th>
+    <th>Account status</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @users.each do |user| %>
+  <tr>
+    <td><%= user.id %></td>
+    <td><%= user.login %></td>
+    <td><%= user.name %></td>
+    <td><%= user.email %></td>
+    <td><%= user.crypted_password %></td>
+    <td><%= user.salt %></td>
+    <td><%= user.created_at %></td>
+    <td><%= user.updated_at %></td>
+    <td><%= user.remember_token %></td>
+    <td><%= user.remember_token_expires_at %></td>
+    <td><%= user.admin %></td>
+    <td><%= user.postal_code %></td>
+    <td><%= user.state %></td>
+    <td><%= user.deleted_at %></td>
+    <td><%= user.activation_code %></td>
+    <td><%= user.activated_at %></td>
+    <td><%= user.node_id %></td>
+    <td><%= user.parental_password %></td>
+    <td><%= user.rewinds_updated_at %></td>
+    <td><%= user.publisher_id %></td>
+    <td><%= user.domain_id %></td>
+    <td><%= user.recording_updated_at %></td>
+    <td><%= user.recording_rule_updated_at %></td>
+    <td><%= user.locale %></td>
+    <td><%= user.eula_accepted_at %></td>
+    <td><%= user.parental_control_pin %></td>
+    <td><%= user.favorite_vod_updated_at %></td>
+    <td><%= user.resume_updated_at %></td>
+    <td><%= user.guid %></td>
+    <td><%= user.csg_subscriber_id %></td>
+    <td><%= user.suspended_at %></td>
+    <td><%= user.parental_configuration_updated_at %></td>
+    <td><%= user.tvod_entitlements_updated_at %></td>
+    <td><%= user.samsung_account_id %></td>
+    <td><%= user.watchlist_updated_at %></td>
+    <td><%= user.est_resumes_updated_at %></td>
+    <td><%= user.rental_resumes_updated_at %></td>
+    <td><%= user.linear_resumes_updated_at %></td>
+    <td><%= user.recording_resumes_updated_at %></td>
+    <td><%= user.fod_resumes_updated_at %></td>
+    <td><%= user.linear_entitlements_updated_at %></td>
+    <td><%= user.methods_of_payment_updated_at %></td>
+    <td><%= user.migrated_at %></td>
+    <td><%= user.devices_updated_at %></td>
+    <td><%= user.preview_started_at %></td>
+    <td><%= user.brand_id %></td>
+    <td><%= user.phone_number %></td>
+    <td><%= user.lsdvrs_updated_at %></td>
+    <td><%= user.allow_cancel %></td>
+    <td><%= user.beta_status %></td>
+    <td><%= user.sku %></td>
+    <td><%= user.amazon_user_id %></td>
+    <td><%= user.account_status %></td>
+    <td><%= link_to 'Show', user %></td>
+    <td><%= link_to 'Edit', edit_user_path(user) %></td>
+    <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New User', new_user_path %>

@@ -1,5 +1,5 @@
 ApplicationName::Application.routes.draw do
-  resources :high_scores
+  resources :users
 
 
   # The priority is based upon order of creation:

@@ -1,0 +1,111 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  id: 1
+  login: MyString
+  name: MyString
+  email: MyString
+  crypted_password: MyString
+  salt: MyString
+  created_at: 2014-10-30 14:24:15
+  updated_at: 2014-10-30 14:24:15
+  remember_token: MyString
+  remember_token_expires_at: 2014-10-30 14:24:15
+  admin: false
+  postal_code: MyString
+  state: MyString
+  deleted_at: 2014-10-30 14:24:15
+  activation_code: MyString
+  activated_at: 2014-10-30 14:24:15
+  node_id: MyString
+  parental_password: MyString
+  rewinds_updated_at: 2014-10-30 14:24:15
+  publisher_id: 1
+  domain_id: MyString
+  recording_updated_at: 2014-10-30 14:24:15
+  recording_rule_updated_at: 2014-10-30 14:24:15
+  locale: MyString
+  eula_accepted_at: 2014-10-30 14:24:15
+  parental_control_pin: MyString
+  favorite_vod_updated_at: 2014-10-30 14:24:15
+  resume_updated_at: 2014-10-30 14:24:15
+  guid: MyString
+  csg_subscriber_id: MyString
+  suspended_at: 2014-10-30 14:24:15
+  parental_configuration_updated_at: 2014-10-30 14:24:15
+  tvod_entitlements_updated_at: 2014-10-30 14:24:15
+  samsung_account_id: MyString
+  watchlist_updated_at: 2014-10-30 14:24:15
+  est_resumes_updated_at: 2014-10-30 14:24:15
+  rental_resumes_updated_at: 2014-10-30 14:24:15
+  linear_resumes_updated_at: 2014-10-30 14:24:15
+  recording_resumes_updated_at: 2014-10-30 14:24:15
+  fod_resumes_updated_at: 2014-10-30 14:24:15
+  linear_entitlements_updated_at: 2014-10-30 14:24:15
+  methods_of_payment_updated_at: 2014-10-30 14:24:15
+  migrated_at: 2014-10-30 14:24:15
+  devices_updated_at: 2014-10-30 14:24:15
+  preview_started_at: 2014-10-30 14:24:15
+  brand_id: MyString
+  phone_number: 1
+  lsdvrs_updated_at: 2014-10-30 14:24:15
+  allow_cancel: false
+  beta_status: MyString
+  sku: MyString
+  amazon_user_id: MyString
+  account_status: MyString
+
+two:
+  id: 1
+  login: MyString
+  name: MyString
+  email: MyString
+  crypted_password: MyString
+  salt: MyString
+  created_at: 2014-10-30 14:24:15
+  updated_at: 2014-10-30 14:24:15
+  remember_token: MyString
+  remember_token_expires_at: 2014-10-30 14:24:15
+  admin: false
+  postal_code: MyString
+  state: MyString
+  deleted_at: 2014-10-30 14:24:15
+  activation_code: MyString
+  activated_at: 2014-10-30 14:24:15
+  node_id: MyString
+  parental_password: MyString
+  rewinds_updated_at: 2014-10-30 14:24:15
+  publisher_id: 1
+  domain_id: MyString
+  recording_updated_at: 2014-10-30 14:24:15
+  recording_rule_updated_at: 2014-10-30 14:24:15
+  locale: MyString
+  eula_accepted_at: 2014-10-30 14:24:15
+  parental_control_pin: MyString
+  favorite_vod_updated_at: 2014-10-30 14:24:15
+  resume_updated_at: 2014-10-30 14:24:15
+  guid: MyString
+  csg_subscriber_id: MyString
+  suspended_at: 2014-10-30 14:24:15
+  parental_configuration_updated_at: 2014-10-30 14:24:15
+  tvod_entitlements_updated_at: 2014-10-30 14:24:15
+  samsung_account_id: MyString
+  watchlist_updated_at: 2014-10-30 14:24:15
+  est_resumes_updated_at: 2014-10-30 14:24:15
+  rental_resumes_updated_at: 2014-10-30 14:24:15
+  linear_resumes_updated_at: 2014-10-30 14:24:15
+  recording_resumes_updated_at: 2014-10-30 14:24:15
+  fod_resumes_updated_at: 2014-10-30 14:24:15
+  linear_entitlements_updated_at: 2014-10-30 14:24:15
+  methods_of_payment_updated_at: 2014-10-30 14:24:15
+  migrated_at: 2014-10-30 14:24:15
+  devices_updated_at: 2014-10-30 14:24:15
+  preview_started_at: 2014-10-30 14:24:15
+  brand_id: MyString
+  phone_number: 1
+  lsdvrs_updated_at: 2014-10-30 14:24:15
+  allow_cancel: false
+  beta_status: MyString
+  sku: MyString
+  amazon_user_id: MyString
+  account_status: MyString
